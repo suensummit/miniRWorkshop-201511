@@ -1,4 +1,4 @@
-pkgs <- c("lahman", "dplyr", "data.table",
+pkgs <- c("Lahman", "dplyr", "data.table",
           "rmarkdown", "devtools",
           "ggplot2")
 install.packages(pkgs)
