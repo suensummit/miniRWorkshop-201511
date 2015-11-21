@@ -1,0 +1,18 @@
+## 動手玩資料：R 語言實戰營
+## Data PlayeR Workshop
+
+---
+
+### 內容大綱
+
+- 從小統計軟體到大數據語言
+
+- [Practice] R Basic: 環境安裝與基本設定
+
+- 資料分析師的好朋友
+
+- [Practice] R Data: Play Analysis with R
+
+- 把玩資料，還是被資料玩弄
+
+- [Practice] R Data: Beyond Analysis
