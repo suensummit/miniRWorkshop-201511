@@ -1,11 +1,19 @@
-## 動手玩資料：R 語言實戰營
-## Data PlayeR Workshop
+---
+title: "動手玩資料：R 語言實戰營 - Data PlayeR Workshop"
+author: "Summit Suen"
+date: "Nov 22, 2015"
+output: html_document
+---
 
 ---
 
 ### 內容大綱
 
 - 從小統計軟體到大數據語言
+
+```{r}
+
+```
 
 - [Practice] R Basic: 環境安裝與基本設定
 
