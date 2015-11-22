@@ -4,7 +4,6 @@ author: "Summit Suen"
 date: "Nov 22, 2015"
 output: html_document
 ---
-
 ---
 
 ### 內容大綱
@@ -12,14 +11,41 @@ output: html_document
 - 從小統計軟體到大數據語言
 
 ```{r}
+?solve
+```
 
+[超展開數學教室：賴以威](http://opinion.udn.com/opinion/story/8159/1317267)
+
+```{r}
+p <- 1/2
+for (i in 1:100){
+  p <- p + p*(1/4)^i
+}
+p
+```
+
+R 語言的強項：向量運算
+
+```{r}
+p <- 1/2
+t <- c(1:100)
+p <- p + p*sum((1/4)^t)
+p
 ```
 
 - [Practice] R Basic: 環境安裝與基本設定
 
+```{r}
+# live coding
+```
+
 - 資料分析師的好朋友
 
 - [Practice] R Data: Play Analysis with R
+
+```{r}
+# live coding
+```
 
 - 把玩資料，還是被資料玩弄
 
