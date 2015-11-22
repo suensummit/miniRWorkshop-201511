@@ -17,19 +17,25 @@ output: html_document
 [超展開數學教室：賴以威](http://opinion.udn.com/opinion/story/8159/1317267)
 
 ```{r}
-p <- 1/2
-for (i in 1:1000){
-  p <- p + p*(1/4)^i
+temp <- proc.time()	## current time record
+p <- 0
+for (t in 0:100000){
+  p <- p + 1/2*(1/4)^t
 }
+(spttime <- proc.time() - temp)
 p
 ```
 
 R 語言的強項：向量運算
 
 ```{r}
-p <- 1/2
-t <- c(1:100)
-p <- p + p*sum((1/4)^t)
+# temp <- proc.time()	## current time record
+# p <- 1/2
+# t <- c(0:1000)
+# p <- p*sum((1/4)^t)
+temp <- proc.time()	## current time record
+p <- 1/2*sum((1/4)^c(0:100000)) # calculate in one line
+(spttime <- proc.time() - temp)
 p
 ```
 

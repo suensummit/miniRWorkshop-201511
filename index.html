@@ -75,17 +75,27 @@ img {
 </ul>
 <pre class="r"><code>?solve</code></pre>
 <p><a href="http://opinion.udn.com/opinion/story/8159/1317267">超展開數學教室：賴以威</a></p>
-<pre class="r"><code>p &lt;- 1/2
-for (i in 1:1000){
-  p &lt;- p + p*(1/4)^i
+<pre class="r"><code>temp &lt;- proc.time() ## current time record
+p &lt;- 0
+for (t in 0:100000){
+  p &lt;- p + 1/2*(1/4)^t
 }
-p</code></pre>
-<pre><code>## [1] 0.6779548</code></pre>
+(spttime &lt;- proc.time() - temp)</code></pre>
+<pre><code>##    user  system elapsed 
+##   0.110   0.002   0.113</code></pre>
+<pre class="r"><code>p</code></pre>
+<pre><code>## [1] 0.6666667</code></pre>
 <p>R 語言的強項：向量運算</p>
-<pre class="r"><code>p &lt;- 1/2
-t &lt;- c(1:100)
-p &lt;- p + p*sum((1/4)^t)
-p</code></pre>
+<pre class="r"><code># temp &lt;- proc.time()   ## current time record
+# p &lt;- 1/2
+# t &lt;- c(0:1000)
+# p &lt;- p*sum((1/4)^t)
+temp &lt;- proc.time() ## current time record
+p &lt;- 1/2*sum((1/4)^c(0:100000)) # calculate in one line
+(spttime &lt;- proc.time() - temp)</code></pre>
+<pre><code>##    user  system elapsed 
+##   0.004   0.000   0.004</code></pre>
+<pre class="r"><code>p</code></pre>
 <pre><code>## [1] 0.6666667</code></pre>
 <ul>
 <li>[Practice] R Basic: 環境安裝與基本設定</li>
