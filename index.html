@@ -74,19 +74,14 @@ img {
 <li>從小統計軟體到大數據語言</li>
 </ul>
 <pre class="r"><code>?solve</code></pre>
-<p><a href="http://opinion.udn.com/opinion/story/8159/1317267">超展開數學教室from賴以威</a></p>
+<p><a href="http://opinion.udn.com/opinion/story/8159/1317267">超展開數學教室：賴以威</a></p>
 <pre class="r"><code>p &lt;- 1/2
-for (i in 1:100){
+for (i in 1:1000){
   p &lt;- p + p*(1/4)^i
 }
 p</code></pre>
 <pre><code>## [1] 0.6779548</code></pre>
 <p>R 語言的強項：向量運算</p>
-<pre class="r"><code>p &lt;- 1/2
-t &lt;- c(1:100)
-p &lt;- p + p*sum((1/4)^t)
-p</code></pre>
-<pre><code>## [1] 0.6666667</code></pre>
 <pre class="r"><code>p &lt;- 1/2
 t &lt;- c(1:100)
 p &lt;- p + p*sum((1/4)^t)

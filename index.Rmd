@@ -18,7 +18,7 @@ output: html_document
 
 ```{r}
 p <- 1/2
-for (i in 1:100){
+for (i in 1:1000){
   p <- p + p*(1/4)^i
 }
 p
