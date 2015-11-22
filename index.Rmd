@@ -7,14 +7,35 @@ output: html_document
 ---
 
 ### 內容大綱
-
 - 從小統計軟體到大數據語言
+- 資料分析師的好朋友
+- 把玩資料，還是被資料玩弄
+
+---
+
+## 從小統計軟體到大數據語言
 
 ```{r}
+?'='
+?'<-'
+?'<<-'
 ?solve
+?help
+??help
 ```
 
-[超展開數學教室：賴以威](http://opinion.udn.com/opinion/story/8159/1317267)
+```{r, warning=FALSE}
+1 + 1
+1:10
+x <- c(1:10)
+y <- c(2:5)
+x
+y
+x + y
+x * y
+```
+
+## [超展開數學教室：賴以威](http://opinion.udn.com/opinion/story/8159/1317267)
 
 ```{r}
 temp <- proc.time()	## current time record
@@ -26,7 +47,7 @@ for (t in 0:100000){
 p
 ```
 
-R 語言的強項：向量運算
+## R 語言的強項：向量運算
 
 ```{r}
 # temp <- proc.time()	## current time record
@@ -39,23 +60,25 @@ p <- 1/2*sum((1/4)^c(0:100000)) # calculate in one line
 p
 ```
 
-- [Practice] R Basic: 環境安裝與基本設定
+## [Practice] R Basic: 環境安裝與基本設定
 
 ```{r}
 # live coding
 ```
 
-- 資料分析師的好朋友
+## 資料分析師的好朋友
 
-- [Practice] R Data: Play Analysis with R
+## [Practice] R Data: Play Analysis with R
 
 ```{r}
 # live coding
 ```
 
-- 把玩資料，還是被資料玩弄
+## 把玩資料，還是被資料玩弄
 
-- [Practice] R Data: Beyond Analysis
+## [Practice] R Data: Beyond Analysis
+
+## ETL
 
 ```{r}
 # install.packages("Lahman")
@@ -65,6 +88,8 @@ totalRS <- Teams %>% select(yearID, R, G) %>% mutate(AvgRperG = R/G) %>% group_b
 names(totalRS) <- c("yearID", "RUN")
 head(totalRS)
 ```
+
+## EDA: Visualization
 
 ```{r, fig.width=14, fig.height=5}
 library(ggplot2)
