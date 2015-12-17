@@ -4,6 +4,7 @@ author: "Summit Suen"
 date: "Nov 22, 2015"
 output: html_document
 ---
+> [勘誤 Errata](errata.html)
 ---
 
 ### 內容大綱
