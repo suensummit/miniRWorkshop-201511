@@ -102,3 +102,11 @@ library(Lahman)
 library(dplyr)
 head(filter(Pitching, playerID == "wangch01"))
 ```
+
+## 更多學習資源
+
+- [Try R](http://tryr.codeschool.com/)
+- [Taiwan R User Group 資料分析上手課程](http://taiwanrusergroup.github.io/DSC2014Tutorial/)
+- [R 語言資料分析上手課程 ](https://github.com/TaiwanRUserGroup/DSC2015Tutorial)
+- [木刻思課程平台](http://data-sci.info/)
+- [R Basic with Quantmod 課程（Powered by 木刻思）](https://eduweb.sfi.org.tw/Course.aspx?id=7786)

@@ -111,7 +111,7 @@ for (t in 0:100000){
 }
 (spttime &lt;- proc.time() - temp)</code></pre>
 <pre><code>##    user  system elapsed 
-##   0.118   0.006   0.126</code></pre>
+##   0.129   0.007   0.142</code></pre>
 <pre class="r"><code>p</code></pre>
 <pre><code>## [1] 0.6666667</code></pre>
 </div>
@@ -125,7 +125,7 @@ temp &lt;- proc.time() ## current time record
 p &lt;- 1/2*sum((1/4)^c(0:100000)) # calculate in one line
 (spttime &lt;- proc.time() - temp)</code></pre>
 <pre><code>##    user  system elapsed 
-##   0.006   0.001   0.006</code></pre>
+##   0.003   0.000   0.004</code></pre>
 <pre class="r"><code>p</code></pre>
 <pre><code>## [1] 0.6666667</code></pre>
 </div>
@@ -198,6 +198,16 @@ head(filter(Pitching, playerID == &quot;wangch01&quot;))</code></pre>
 ## 4 35  54 0.249 4.07   1  0   3  0 402  0 44  0  3   NA
 ## 5 19  29 0.365 9.64   1  3   2  0 206  2 46  3  1   NA
 ## 6 13  25 0.272 4.04   0  2   1  0 264  0 35  2  2   NA</code></pre>
+</div>
+<div class="section level2">
+<h2>更多學習資源</h2>
+<ul>
+<li><a href="http://tryr.codeschool.com/">Try R</a></li>
+<li><a href="http://taiwanrusergroup.github.io/DSC2014Tutorial/">Taiwan R User Group 資料分析上手課程</a></li>
+<li><a href="https://github.com/TaiwanRUserGroup/DSC2015Tutorial">R 語言資料分析上手課程</a></li>
+<li><a href="http://data-sci.info/">木刻思課程平台</a></li>
+<li><a href="https://eduweb.sfi.org.tw/Course.aspx?id=7786">R Basic with Quantmod 課程（Powered by 木刻思）</a></li>
+</ul>
 </div>
 
 
